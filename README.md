@@ -45,7 +45,7 @@ Timelapse HTB Machine
   ```sh
    nmap -p- 10.10.11.152
    ```
-   ````sh
+   ```sh
       PORT      STATE SERVICE          REASON
       53/tcp    open  domain           syn-ack ttl 127
       88/tcp    open  kerberos-sec     syn-ack ttl 127
@@ -65,7 +65,7 @@ Timelapse HTB Machine
       49674/tcp open  unknown          syn-ack ttl 127
       49696/tcp open  unknown          syn-ack ttl 127
       51231/tcp open  unknown          syn-ack ttl 127
-   ````
+   ```
 
 
 ```sh
@@ -73,7 +73,7 @@ Timelapse HTB Machine
    ```
 
 
-``sh
+```sh
    PORT     STATE SERVICE       REASON          VERSION
 53/tcp   open  domain        syn-ack ttl 127 Simple DNS Plus
 88/tcp   open  kerberos-sec  syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2022-06-13 15:03:29Z)
@@ -86,7 +86,7 @@ Timelapse HTB Machine
 636/tcp  open  ldapssl?      syn-ack ttl 127
 3268/tcp open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: timelapse.htb0., Site: Default-First-Site-Name)
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
-   ``
+   ```
    
    
 
@@ -95,7 +95,7 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
    smbclient -N -L 10.10.11.152
    ```
 
-   ``sh
+   ```sh
    Sharename       Type      Comment
         ---------       ----      -------
         ADMIN$          Disk      Remote Admin
@@ -104,7 +104,7 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
         NETLOGON        Disk      Logon server share 
         Shares          Disk      
         SYSVOL          Disk      Logon server share 
-   ``
+   ```
 
   Ivestiating we find several files on Shares share:
 
