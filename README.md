@@ -175,6 +175,10 @@ Session completed.
    openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out priv.pem -nodes
    ``
    
+   
+   
+   
+   
    After formatting the files correctly we can connect via ssh:
    
    ```sh
