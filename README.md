@@ -45,7 +45,7 @@ Timelapse HTB Machine
   ```sh
    nmap -p- 10.10.11.152
    ```
-   ``sh
+   `sh
       PORT      STATE SERVICE          REASON
       53/tcp    open  domain           syn-ack ttl 127
       88/tcp    open  kerberos-sec     syn-ack ttl 127
@@ -65,7 +65,7 @@ Timelapse HTB Machine
       49674/tcp open  unknown          syn-ack ttl 127
       49696/tcp open  unknown          syn-ack ttl 127
       51231/tcp open  unknown          syn-ack ttl 127
-   ``
+   `
 
 
 ```sh
