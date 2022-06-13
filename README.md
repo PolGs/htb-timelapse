@@ -23,12 +23,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/polgs/htb-timelapse">
-    <img src="[images/logo.png](https://user-images.githubusercontent.com/19478700/173301506-f8a85cbf-aafd-4028-85c9-63cfae763820.png)" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">HTB Timelapse Notes</h3>
-
+![Timelapse](https://user-images.githubusercontent.com/19478700/173301506-f8a85cbf-aafd-4028-85c9-63cfae763820.png)
 </div>
 
 
@@ -64,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Timelapse](https://user-images.githubusercontent.com/19478700/173301506-f8a85cbf-aafd-4028-85c9-63cfae763820.png)
+
 
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
