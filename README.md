@@ -209,10 +209,12 @@ My pass is :  E3R$Q62^12p7PLlC%KWaxuaV
 ![image](https://user-images.githubusercontent.com/19478700/173321468-1b361114-94aa-478d-8529-0db4d7bc5ce3.png)
 
 
-`
+``sh
 pass: : G!OSV[!-e[-w).,4rK6G,78/
 
-`
+``
+
+![image](https://user-images.githubusercontent.com/19478700/173322498-724c5dc2-b14c-4b70-9d9e-5cf2c71e681c.png)
 
 
 
