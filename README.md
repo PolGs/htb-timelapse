@@ -143,8 +143,12 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
   Convert:
   ```sh
   pfx2john legacyy_dev_auth.pfx > pfx_john_legacy.hash
-  joh`n -w=/usr/share/wordlists/rockyou.txt pfx_john_legacy.hash 
   ```
+  
+  ```sh
+  john -w=/usr/share/wordlists/rockyou.txt pfx_john_legacy.hash 
+  ```
+  
   ```sh
 Using default input encoding: UTF-8
 Loaded 1 password hash (pfx, (.pfx, .p12) [PKCS#12 PBE (SHA1/SHA2) 128/128 AVX 4x])
