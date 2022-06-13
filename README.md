@@ -25,9 +25,10 @@
 <div align="center">
 
 <h3 align="center">HTB Timelapse Notes</h3>
-![Timelapse](https://user-images.githubusercontent.com/19478700/173301506-f8a85cbf-aafd-4028-85c9-63cfae763820.png)
+
 </div>
 
+![Timelapse](https://user-images.githubusercontent.com/19478700/173301506-f8a85cbf-aafd-4028-85c9-63cfae763820.png)
 
 
 <!-- TABLE OF CONTENTS -->
