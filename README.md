@@ -136,7 +136,7 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
    
    
 
-### 3.Cracking pfx:
+### 4.Cracking pfx:
   A quick Google search about extracting cert keys from pfx:
   https://www.ibm.com/docs/en/arl/9.7?topic=certification-extracting-certificate-keys-from-pfx-file
   but we need to obtain the pfx key first so we are gonna try to crack it using john
@@ -173,23 +173,25 @@ Session completed.
    Extract priv key:
    ```sh
    openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out priv.pem -nodes
-   ```
-   
-   
-   
-   
+   ``` 
    
    After formatting the files correctly we can connect via ssh:
    
    ```sh
-   evil-winrm -S -k legacy.key -c legacy.cert -i 10.10.11.152
+   evil-winrm -S -k formated/key.key -c formated/cert.crt -i 10.10.11.152
    ``` 
-   
+
+![image](https://user-images.githubusercontent.com/19478700/173311463-09780f02-46e4-4b45-8b29-035ae846986b.png)
+
   
+##### USER FLAG OWNED
+
+acb916822269ae7d9417c7c998749b8e
 
    
-   
-### 2.SMB Enumeration:
+### 5:Privilege Escalation (System OWN):
+
+
 
 
 
@@ -215,8 +217,6 @@ Pol Galvez - polgalvezsoriano@gmail.com
 ## Acknowledgments
 
 * [aidenpearce369.github.io](aidenpearce369.github.io)
-* []()
-* []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
