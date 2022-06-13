@@ -24,7 +24,7 @@
 <br />
 <div align="center">
 
-<h3 align="center">HTB Timelapse Notes</h3>
+<h1 align="center">HTB Timelapse Notes</h1>
 
 </div>
 
@@ -39,9 +39,58 @@
 Timelapse HTB Machine
 
 
-### Steps
+## Steps
 
-1. nmap scans:
+### 1. Nmap Scans:
+  ```sh
+   nmap -p- 10.10.11.152
+   ```
+   ```sh
+      PORT      STATE SERVICE          REASON
+      53/tcp    open  domain           syn-ack ttl 127
+      88/tcp    open  kerberos-sec     syn-ack ttl 127
+      135/tcp   open  msrpc            syn-ack ttl 127
+      139/tcp   open  netbios-ssn      syn-ack ttl 127
+      389/tcp   open  ldap             syn-ack ttl 127
+      445/tcp   open  microsoft-ds     syn-ack ttl 127
+      464/tcp   open  kpasswd5         syn-ack ttl 127
+      593/tcp   open  http-rpc-epmap   syn-ack ttl 127
+      636/tcp   open  ldapssl          syn-ack ttl 127
+      3268/tcp  open  globalcatLDAP    syn-ack ttl 127
+      3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
+      5986/tcp  open  wsmans           syn-ack ttl 127
+      9389/tcp  open  adws             syn-ack ttl 127
+      49667/tcp open  unknown          syn-ack ttl 127
+      49673/tcp open  unknown          syn-ack ttl 127
+      49674/tcp open  unknown          syn-ack ttl 127
+      49696/tcp open  unknown          syn-ack ttl 127
+      51231/tcp open  unknown          syn-ack ttl 127
+   ```
+
+
+```sh
+   nmap -p- 10.10.11.152
+   ```
+
+
+```sh
+   PORT     STATE SERVICE       REASON          VERSION
+53/tcp   open  domain        syn-ack ttl 127 Simple DNS Plus
+88/tcp   open  kerberos-sec  syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2022-06-13 15:03:29Z)
+135/tcp  open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+389/tcp  open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: timelapse.htb0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds? syn-ack ttl 127
+464/tcp  open  kpasswd5?     syn-ack ttl 127
+593/tcp  open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ldapssl?      syn-ack ttl 127
+3268/tcp open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: timelapse.htb0., Site: Default-First-Site-Name)
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+   ```
+   
+   
+
+### 2.Nmap Scans:
   ```sh
    nmap -p- 10.10.11.152
    ```
@@ -70,7 +119,6 @@ Timelapse HTB Machine
 
    
    ```
-
 
    
 
