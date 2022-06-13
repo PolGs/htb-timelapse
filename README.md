@@ -186,7 +186,8 @@ Session completed.
   
 ##### USER FLAG OWNED
 
-acb916822269ae7d9417c7c998749b8e
+![image](https://user-images.githubusercontent.com/19478700/173313648-fb8d2a9d-8b5a-4d3f-9771-e3fec5ea63d3.png)
+
 
    
 ### 5:Privilege Escalation (System OWN):
