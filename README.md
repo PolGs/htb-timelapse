@@ -69,7 +69,7 @@ Timelapse HTB Machine
 
 
 ```sh
-   nmap -p- 10.10.11.152
+   nmap -sVC 10.10.11.152
    ```
 
 
@@ -90,43 +90,32 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
    
    
 
-### 2.Nmap Scans:
+### 2.SMB Enumeration:
   ```sh
-   nmap -p- 10.10.11.152
+   smbclient -N -L 10.10.11.152
    ```
 
    ```sh
-   
-      PORT      STATE SERVICE          REASON
-      53/tcp    open  domain           syn-ack ttl 127
-      88/tcp    open  kerberos-sec     syn-ack ttl 127
-      135/tcp   open  msrpc            syn-ack ttl 127
-      139/tcp   open  netbios-ssn      syn-ack ttl 127
-      389/tcp   open  ldap             syn-ack ttl 127
-      445/tcp   open  microsoft-ds     syn-ack ttl 127
-      464/tcp   open  kpasswd5         syn-ack ttl 127
-      593/tcp   open  http-rpc-epmap   syn-ack ttl 127
-      636/tcp   open  ldapssl          syn-ack ttl 127
-      3268/tcp  open  globalcatLDAP    syn-ack ttl 127
-      3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
-      5986/tcp  open  wsmans           syn-ack ttl 127
-      9389/tcp  open  adws             syn-ack ttl 127
-      49667/tcp open  unknown          syn-ack ttl 127
-      49673/tcp open  unknown          syn-ack ttl 127
-      49674/tcp open  unknown          syn-ack ttl 127
-      49696/tcp open  unknown          syn-ack ttl 127
-      51231/tcp open  unknown          syn-ack ttl 127
-
-   
+   Sharename       Type      Comment
+        ---------       ----      -------
+        ADMIN$          Disk      Remote Admin
+        C$              Disk      Default share
+        IPC$            IPC       Remote IPC
+        NETLOGON        Disk      Logon server share 
+        Shares          Disk      
+        SYSVOL          Disk      Logon server share 
    ```
 
-   
-
-3. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   smbclient \\\\10.10.11.152\\Shares
    ```
 
+   ```sh
+    LAPS_Datasheet.docx               LAPS.x64.msi
+    LAPS_OperationsGuide.docx         winrm_backup.zip
+    LAPS_TechnicalSpecification.docx
+
+   ```
 
 
 
