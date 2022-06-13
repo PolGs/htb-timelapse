@@ -1,0 +1,10 @@
+Sharename       Type      Comment
+       ---------       ----      -------
+       ADMIN$          Disk      Remote Admin
+       C$              Disk      Default share
+       IPC$            IPC       Remote IPC
+       NETLOGON        Disk      Logon server share
+       Shares          Disk
+       SYSVOL          Disk      Logon server share
+
+[+] IP: 10.10.11.152:445        Name: timelapse.htb   
